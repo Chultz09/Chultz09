@@ -27,3 +27,9 @@ t = 30  # segundos
 y_30s = R - (g * t**2 / 8)**0.5
 
 print("El nivel del agua para t = 30 segundos es:", y_30s, "metros")
+plt.plot(t, y_mm)
+plt.xlabel('Tiempo (seg)')
+plt.ylabel('Altura (mm)')
+plt.title('Altura vs. Tiempo')
+plt.grid(True)
+plt.savefig('grafica.png')
